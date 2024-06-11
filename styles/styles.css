@@ -1,4 +1,8 @@
 /* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -33,6 +37,134 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0 300px;
+}
+
+/* Header */
+.header {
+  background: rgba(255, 255, 255, 0.67);
+  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.12) inset,
+    0px 4px 24px 0px rgba(0, 0, 0, 0.12);
+}
+
+.header_container {
+  display: flex;
+  gap: 86px;
+  padding-top: 6px;
+  padding-bottom: 28px;
+}
+
+.header_text-group {
+  padding-top: 27px;
+}
+
+.title-goup {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.title-goup_main-title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.24px;
+}
+
+.title-goup_date {
+  padding: 7px 12px;
+
+  color: #3d8eda;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.39px;
+
+  border-radius: 2px;
+  border: 1px solid #3d8eda;
+}
+
+.counter-group {
+  display: flex;
+  gap: 17px;
+
+  margin-bottom: 19px;
+}
+
+.counter-group_item-counter {
+  font-weight: 700;
+}
+
+.date-filter {
+  display: flex;
+  align-items: center;
+}
+
+.date-filter_text {
+  margin-right: 16px;
+  font-size: 16px;
+}
+
+.date-filter > .flatpickr {
+  display: flex;
+}
+
+.flatpickr-day,
+.flatpickr-day.today,
+.flatpickr-day.selected {
+  border-radius: 4px;
+}
+
+.flatpickr input {
+  width: 107px;
+  padding: 7px 21px 7px 8px;
+
+  color: #636264;
+  font-size: 13px;
+
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 1px solid #dedede;
+}
+
+.flatpickr input::placeholder {
+  color: #636264;
+  font-size: 13px;
+}
+
+.flatpickr--margin-right {
+  margin-right: 22px;
+}
+
+.input-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ebebeb;
+  border: 1px solid #dedede;
+}
+
+.input-button--border-right {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.icon-calendar {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  background-image: url(../img/calendar.png);
+}
+
+.icon-close {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  background-image: url(../img/cros.png);
 }
