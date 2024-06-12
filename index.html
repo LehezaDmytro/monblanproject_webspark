@@ -54,39 +54,41 @@
           </ul>
           <div class="date-filter">
             <p class="date-filter_text">Date:</p>
-            <div class="flatpickr flatpickr--margin-right">
-              <input type="text" placeholder="from" data-input />
-              <a class="input-button" title="clear" data-clear>
-                <svg class="icon-close">
-                  <use href="./img/sprite.svg#cros"></use>
-                </svg>
-              </a>
-              <a
-                class="input-button input-button--border-right"
-                title="calendar"
-                data-toggle
-              >
-                <svg class="icon-calendar">
-                  <use href="./img/sprite.svg#calendar"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="flatpickr">
-              <input type="text" placeholder="to" data-input />
-              <a class="input-button" title="clear" data-clear>
-                <svg class="icon-close">
-                  <use href="./img/sprite.svg#cros"></use>
-                </svg>
-              </a>
-              <a
-                class="input-button input-button--border-right"
-                title="calendar"
-                data-toggle
-              >
-                <svg class="icon-calendar">
-                  <use href="./img/sprite.svg#calendar"></use>
-                </svg>
-              </a>
+            <div class="date-filter__wrapper-inputs">
+              <div class="flatpickr">
+                <input type="text" placeholder="from" data-input />
+                <a class="input-button" title="clear" data-clear>
+                  <svg class="icon-close">
+                    <use href="./img/sprite.svg#cros"></use>
+                  </svg>
+                </a>
+                <a
+                  class="input-button input-button--border-right"
+                  title="calendar"
+                  data-toggle
+                >
+                  <svg class="icon-calendar">
+                    <use href="./img/sprite.svg#calendar"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="flatpickr">
+                <input type="text" placeholder="to" data-input />
+                <a class="input-button" title="clear" data-clear>
+                  <svg class="icon-close">
+                    <use href="./img/sprite.svg#cros"></use>
+                  </svg>
+                </a>
+                <a
+                  class="input-button input-button--border-right"
+                  title="calendar"
+                  data-toggle
+                >
+                  <svg class="icon-calendar">
+                    <use href="./img/sprite.svg#calendar"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -489,6 +491,5 @@
     </main>
     <!-- Connecting scripts -->
     <script src="./js/index.js" type="module"></script>
-    <script src="./js/flatpickr.js" type="module"></script>
   </body>
 </html>
